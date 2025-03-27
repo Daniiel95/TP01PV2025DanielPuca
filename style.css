@@ -1,0 +1,9 @@
+/*comentarios*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10;
+    padding: 30;
+    line-height: 1.6;
+    background-color: rgb(219, 119, 119)
+    ;
+}

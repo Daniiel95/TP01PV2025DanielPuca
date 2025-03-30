@@ -1,9 +1,38 @@
 /*comentarios*/
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Times New Roman', Times, serif; 
     margin: 10;
     padding: 30;
-    line-height: 1.6;
-    background-color: rgb(219, 119, 119)
+    line-height: 1.6;/*espacios entre lineas*/
+    background-color: rgb(240, 224, 213)
     ;
+}
+.t1{
+    color: rgb(218, 218, 230);
+    background-color: brown;
+    font-family:cursive;
+    margin:0%;
+    text-align:center;
+    border:rgb(255, 0, 0);
+}
+.t2{
+    font-size: 20px;;
+    text-decoration: underline;
+}
+h1{
+    color: rgb(218, 218, 230);
+    background-color: brown;
+    font-family:cursive;
+    margin:0%;
+    text-align:center;
+    border:rgb(255, 0, 0); 
+}
+.i1{
+    text-align: center; 
+    margin: 20px;
+}
+img {
+    width: 50%;
+    height:50%;
+    border-radius: 10px; 
 }

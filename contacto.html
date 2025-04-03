@@ -8,26 +8,40 @@
 </head>
 <body>
     <header>
-        <h1>Contacto</h1>
+        <h1>Contacto</h1><br>
     </header>
-     <h2>Envíanos un mensaje</h2>
-        <form action="servidorsonde enviarlosdatos" method="post">
-            <label for="nombre">Nombre y Apellido</label>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="museos.html">Museos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul><br>
+     <main>
+        <form id="contact-form">
+            <label for="nombre">Nombre y Apellido:</label>
             <input type="text" id="nombre"><br><br>
+
             <label for="documento">Ducumento</label>
             <input type="number" id="documento"><br><br>
+
             <label for="fnacimiento">Fecha de Nacimiento</label>
             <input type="date" id="fnacimiento"><br><br>
+
             <label for="sexo">Sexo</label>
             <input type="radio" name="sexo"/>Fem.
             <input type="radio" name="sexo"/>Mas.
             <input type="radio" name="sexo"/>Otro. <br><br>
+
             <label for="mensaje">Mensaje: </label>
-            <textarea name="mensaje" id="mensaje" ></textarea><br><br>
+            <textarea name="mensaje" id="mensaje" rows="4"></textarea><br><br>
+          
             <input type="submit" value="Enviar">
         </form>
- 
+     </main>
     <br>
-    <li><a href="index.html">Volver</a></li>
+    <footer>
+        <p>&copy; 2025 Cultura de Peru. Todos los derechos reservados.</p>
+    </footer>
+    
 </body>
 </html>

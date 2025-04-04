@@ -50,8 +50,8 @@ h1{
     border:rgb(255, 0, 0); 
 }
 .i1{
-    text-align: center; 
-    margin: 20px;
+    width: 400px;
+    height: auto;
 }
 .container{
     display: flex;

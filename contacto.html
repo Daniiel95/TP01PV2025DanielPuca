@@ -19,29 +19,41 @@
      <main>
         <form id="contact-form">
             <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" id="nombre"><br><br>
+            <input type="text" id="nombre" required><br><br>
 
-            <label for="documento">Ducumento</label>
-            <input type="number" id="documento"><br><br>
+            <label for="documento">Ducumento:</label>
+            <input type="number" id="documento" required><br><br>
 
-            <label for="fnacimiento">Fecha de Nacimiento</label>
+            <label for="fnacimiento">Fecha de Nacimiento:</label>
             <input type="date" id="fnacimiento"><br><br>
-
-            <label for="sexo">Sexo</label>
-            <input type="radio" name="sexo"/>Fem.
-            <input type="radio" name="sexo"/>Mas.
-            <input type="radio" name="sexo"/>Otro. <br><br>
 
             <label for="mensaje">Mensaje: </label>
             <textarea name="mensaje" id="mensaje" rows="4"></textarea><br><br>
           
-            <input type="submit" value="Enviar">
+            <button type="submit" onclick="enviarFormulario()">Enviar</button>
         </form>
      </main>
     <br>
     <footer>
         <p>&copy; 2025 Cultura de Peru. Todos los derechos reservados.</p>
     </footer>
-    
+    <script>
+        function enviarFormulario(){
+            event.preventDefault();
+
+            var nombre=document.getElementById("nombre").value;
+            var documento=document.getElementById("documento").value;
+            var fnacimiento=document.getElementById("fnacimiento").value;
+            var mensaje=document.getElementById("mensaje").value
+
+            //mostar los valores en la consola
+            console.log("Nombre:",nombre);
+            console.log("Documento:",documento);
+            console.log("fecha de nacimiento: ",fnacimiento);
+            console.log("Mensaje: ",mensaje);
+
+            alert("nombre: "+nombre+" y documento: "+documento)
+        }
+    </script>
 </body>
 </html>
